@@ -1,10 +1,22 @@
 {
-  "extends": ["eslint:recommended"],
+  "env": {
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
   "plugins": [],
-  "parserOptions": {},
-  "env": {"browser": true},
+  "parserOptions": {
+  },
   "globals": {},
   "rules": {
-    "semi": "error"
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQute": true,
+        "trailingComma": "es5"
+      }
+    ]
   }
 }
